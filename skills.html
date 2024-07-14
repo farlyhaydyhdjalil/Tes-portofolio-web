@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+
+    <header class="bg-white w-full fixed top-0 z-20">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-lg font-bold text-gray-600">Ski<span class="text-blue-500">lls</span></div>
+            <div class="tabs">
+                <input value="home" name="tab" id="home" type="radio" class="input"/>
+                <label for="home" class="label" onclick="navigateTo('home.html')">Home</label>
+                <input value="about" name="tab" id="about" type="radio" class="input"/>
+                <label for="about" class="label" onclick="navigateTo('about.html')">About</label>
+                <input checked value="skills" name="tab" id="skills" type="radio" class="input"/>
+                <label for="skills" class="label">Skills</label>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mx-auto flex flex-col items-center justify-center min-h-screen p-4 mt-16 relative z-30">
+        <div class="card-skills">
+            <h1 class="text-5xl font-bold text-white mb-4">My Skills</h1>
+            <div class="skill-bar">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>PHP</h3>
+                    <div class="progress-bar">
+                        <div class="progress php"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress javascript"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
